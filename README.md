@@ -1,3 +1,12 @@
+# Docker
+To run Docker to development run the following command:
+```docker run -p 3000:3000 -v /usr/app/node_modules -v $(pwd)/app create-react-app```
+
+Don't forget to run this following command before:
+```docker image build -t create-react-app .```
+
+You don't need to have `node__modules` in your local machine!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
