@@ -23,6 +23,13 @@ The following command will start the web app and in another service will start t
 
 ```docker-compose up```
 
+## Build then host on nginx
+Should run:
+```docker build . -t create-react-app-nginx```
+
+The run:
+```docker run -p 8080:80 create-react-app-nginx```
+
 # create-react-app README.MD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
