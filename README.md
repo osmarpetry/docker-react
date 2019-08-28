@@ -1,7 +1,7 @@
 # Docker
 To run Docker to development run the following command:
 
-```docker run -p 3000:3000 -v /usr/app/node_modules -v $(pwd):/usr/app create-react-appd``
+```docker run -p 3000:3000 -v /usr/app/node_modules -v $(pwd):/usr/app create-react-appd```
 
 Don't forget to run this following command before:
 
@@ -18,10 +18,12 @@ If you want to have control when running the test, do this following command:
 
 ```docker run -it -p 3000:3000 -v /usr/app/node_modules -v $(pwd):/usr/app create-react-app npm run test```
 
+## Run with docker-compose
+The following command will start the web app and in another service will start to run tests (not on watch mode 😥 ):
 
+```docker-compose up```
 
-
-# Create-react-app README.MD
+# create-react-app README.MD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
